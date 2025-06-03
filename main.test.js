@@ -43,8 +43,8 @@ const makeFriendly = function (paragraph) {
 
 const cubeAll = function (num) {
   const result = []
-  for (constn of num) {
-    result.push(Math.pow(num[i], 3))
+  for (const n of num) {
+    result.push(Math.pow(n, 3))
   }
   return result
 }
@@ -52,8 +52,7 @@ const cubeAll = function (num) {
 const addNoises = function (animals) {
   const result = []
   for (const animal of animals) {
-    const animal = animals[i]
-    if (animal === 'Fido' || animal === 'Rolph' || animal === 'Maisie') {
+        if (animal === 'Fido' || animal === 'Rolph' || animal === 'Maisie') {
       result.push(animal + ' says "Woof!"')
     } else if (animal === 'Garfield' || animal === 'Heathcliff') {
       result.push(animal + ' says "Meow!"')
@@ -69,8 +68,8 @@ const addNoises = function (animals) {
 const womenOnly = function(names) {
   const result = []
   for (const name of names) {
-    if (names[i].endsWith('F')) {
-      result.push(names[i])
+    if (name.endsWith('F')) {
+      result.push(name)
     }
   }
   return result
@@ -78,9 +77,9 @@ const womenOnly = function(names) {
 
 const integersOnly = function (numbers) {
   const result = []
-  for (constnumber of numbers) {
-    if(Number.isInteger(numbers[i])) {
-      result.push(numbers[i])
+  for (const number of numbers) {
+    if(Number.isInteger(number)) {
+      result.push(number)
     }
   }
   return result
